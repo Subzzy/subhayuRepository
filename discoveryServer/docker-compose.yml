@@ -1,0 +1,15 @@
+version: '3'
+services: 
+  discoveryserver:
+    image: discoveryserver:latest
+    build:
+            context: .
+            dockerfile: Dockerfile
+    image: discoveryserver:latest
+    expose:
+            - 8761
+    networks: 
+            - my-bridge-network
+
+networks: 
+    my-bridge-network:
