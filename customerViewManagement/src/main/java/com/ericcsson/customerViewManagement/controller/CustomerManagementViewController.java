@@ -11,6 +11,11 @@ import com.ericcsson.customerViewManagement.model.CustomerViewIndividual;
 import com.ericcsson.customerViewManagement.service.CustomerInfoManagementService;
 import com.ericcsson.customerViewManagement.service.CustomerPlanManagementService;
 
+/**************************************************************************
+ * This Controller is meant to be used only for disaster recovery
+ * In general user will always use "CustomerManagementViewMicroController"
+ **************************************************************************/
+
 
 @RestController
 @RequestMapping("/dao")
